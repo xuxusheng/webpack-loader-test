@@ -2,7 +2,7 @@
 编写自己的webpack loader
 
 ### 自定义 attr-loader
-tools/attr-loader文件中
+tools/attr-loader 文件夹中
 
 以 attr-loader?scope=xxx 的形式接受参数
 
