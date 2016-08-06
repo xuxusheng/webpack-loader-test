@@ -3,11 +3,17 @@ var processSelector = require('./processSelector')
 var loaderUtils = require('loader-utils')
 
 module.exports = function (source) {
+
+    // 缓存
     if(this.cacheable) this.cacheable();
     var callback = this.async()
     var query = loaderUtils.parseQuery(this.query)
-    
-    if (typeof query.scope === 'undefined') callback(null, source)
+
+    // 如果未获取到scope参数，则直接返回
+    if (!query.scope) {
+        callback(null, source)
+        return
+    }
     
     var root = postcss.parse(source)
     
