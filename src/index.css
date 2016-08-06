@@ -1,0 +1,10 @@
+a#content.active > div::first-line[data-content],
+#selectTwo {
+    border: 1px solid rebeccapurple;
+    height: 200px;
+}
+
+a:not(:visited) {
+    width: 100px;
+    height: 150px;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "webpack-loader-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --colors --inline --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/xuxusheng/webpack-loader-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuxusheng/webpack-loader-test/issues"
+  },
+  "homepage": "https://github.com/xuxusheng/webpack-loader-test#readme",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "css-selector-tokenizer": "^0.6.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.22.0",
+    "loader-utils": "^0.2.15",
+    "postcss": "^5.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
