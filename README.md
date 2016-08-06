@@ -8,6 +8,8 @@ tools/attr-loader 文件夹中
 
 在所有css文件中的选择器后面加上自定义属性选择器[xxx]
 
+> 如果没有接受到scope参数，则不做任何处理。
+
 **例如：**
 ```
 a#content.active > div::first-line[data-content],
