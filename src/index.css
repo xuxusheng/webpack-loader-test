@@ -1,5 +1,6 @@
-a#content.active > div::first-line[data-content],
-#selectTwo {
+a#content.active:first-child .cla > div::first-line[data-content],
+#selectTwo:hover + #id2,
+.group::after {
     border: 1px solid rebeccapurple;
     height: 200px;
 }

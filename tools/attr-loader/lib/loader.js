@@ -7,6 +7,7 @@ module.exports = function (source) {
     // 缓存
     if(this.cacheable) this.cacheable();
     var callback = this.async()
+    // 参数
     var query = loaderUtils.parseQuery(this.query)
 
     // 如果未获取到scope参数，则直接返回
