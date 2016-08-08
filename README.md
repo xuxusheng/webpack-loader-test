@@ -12,8 +12,9 @@ tools/attr-loader 文件夹中
 
 **例如：**
 ```
-a#content.active > div::first-line[data-content],
-#selectTwo {
+a#content.active:first-child .cla > div::first-line[data-content],
+#selectTwo:hover + #id2,
+.group::after {
     border: 1px solid rebeccapurple;
     height: 200px;
 }
@@ -26,13 +27,14 @@ a:not(:visited) {
 
 执行 webpack 命令后生成的文件中：
 ```
-a[xusheng]#content[xusheng].active[xusheng] > div[xusheng]::first-line[xusheng][data-content],
-#selectTwo[xusheng] {
+a#content.active:first-child .cla[xusheng] > div::first-line[data-content][xusheng],
+#selectTwo:hover + #id2,
+.group::after[xusheng] {
     border: 1px solid rebeccapurple;
     height: 200px;
 }
 
-a[xusheng]:not(:visited) {
+a:not(:visited)[xusheng] {
     width: 100px;
     height: 150px;
 }
